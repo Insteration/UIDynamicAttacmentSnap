@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         collision.translatesReferenceBoundsIntoBoundary = true
         attachmentBehavior = UIAttachmentBehavior(item: squareView, attachedToAnchor: anchorView.center)
         animator?.addBehavior(collision)
+        animator?.addBehavior(attachmentBehavior)
     }
 }
 
